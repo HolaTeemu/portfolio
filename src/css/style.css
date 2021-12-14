@@ -1,0 +1,206 @@
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  Remove list styles (bullets/numbers)
+  in case you use it with normalize.css
+*/
+ol,
+ul {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-width: 100%;
+}
+
+/* Removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* Revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+/*
+GENERAL CSS
+*/
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  /* background-color: #0c2233; */
+  background: url("../images/testikuva3.png");
+  background-size: cover;
+  color: #d3d3d3;
+}
+
+a {
+  text-decoration: none;
+  color: #d3d3d3;
+}
+
+/*
+HEADER
+*/
+
+header {
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  padding: 0 20%;
+  /* background-color: #444; */
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.logo {
+  font-size: 1.5em;
+  line-height: 1.25em;
+  font-weight: 100;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  margin: auto;
+  float: left;
+  width: 30%;
+  transition: transform 250ms ease-out, color 250ms;
+}
+
+.logo span {
+  font-size: 1.75em;
+  font-weight: 300;
+  color: #00ffff;
+}
+
+.nav-links {
+  width: 70%;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.nav-links li {
+  display: flex;
+  height: 100%;
+  width: 25%;
+  float: left;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links li a {
+  margin-top: 1em;
+  font-size: 1.5em;
+  font-weight: 300;
+  padding: 10%;
+  transition: transform 250ms ease-out, color 250ms;
+}
+
+.nav-links li a:hover,
+.logo:hover {
+  transform: translateY(-10px);
+  color: teal;
+}
+
+.hamburger-icon {
+  display: none;
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+  float: right;
+}
+
+.hamburger-icon .line-2 {
+  transform: translateY(10px);
+}
+
+.hamburger-icon .line-3 {
+  transform: translateY(20px);
+}
+
+@media (max-width: 640px) {
+  .hamburger-icon {
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    display: inline;
+  }
+  .nav-links li {
+    display: none;
+  }
+}
+
+/*
+CONTENT
+*/
+.container {
+  margin: 10% auto 0 auto;
+  width: 60%;
+}
+
+.introduction-container {
+  width: 70%;
+  float: left;
+}
+
+.hello-line {
+  margin-top: 0;
+  font-size: 2.25em;
+  color: #00ffff;
+}
+
+h1 {
+  display: inline-block;
+  color: #9d9d9d;
+  font-size: 8em;
+  font-weight: 100;
+  margin: 0;
+  width: 100%;
+  animation: 1.5s infinite alternate ease-out color_change_h1;
+}
+
+.slogan {
+  font-size: 2.5em;
+  color: #74bbca;
+}
+
+.intro-text {
+  margin-top: 5%;
+  font-size: 1.75em;
+  width: 40%;
+}
+
+.social-media-icons {
+  margin-top: 5%;
+  width: 100%;
+}
+.social-media-icons img {
+  padding-right: 1%;
+}
+
+.selfie {
+  float: right;
+  height: 100%;
+  width: 30%;
+}
+
+@keyframes color_change_h1 {
+  from {
+    color: #9d9d9d;
+  }
+  to {
+    color: #4b4b4b;
+  }
+}
+/*
+HEADER
+*/
