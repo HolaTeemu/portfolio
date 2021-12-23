@@ -1,0 +1,88 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  margin: 2% auto 0 auto;
+}
+
+h2 {
+  text-align: center;
+  margin: 0 auto;
+  width: 15%;
+  font-size: 2.5em;
+  color: #d3d3d3;
+  font-weight: 300;
+}
+
+.container {
+  width: 50%;
+  margin-top: 5%;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  float: left;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 100%;
+}
+
+.about-container img {
+  /* border: solid 5px aqua; */
+  border-radius: 50%;
+  width: 30%;
+  margin: 5% auto;
+}
+
+.about-text-section {
+  width: 55%;
+  margin-left: 15%;
+  font-size: 1.5em;
+}
+
+.about-icon-div {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  border-right: solid 2px aqua;
+  margin-right: 0;
+}
+
+.icon-title {
+  font-weight: 300;
+  font-size: 2em;
+  color: #d3d3d3;
+  text-align: center;
+}
+
+#in-tech {
+  font-size: 0.75em;
+}
+
+.about-list {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.about-list li::before {
+  content: url("../images/chevron-forward-outline-aqua.svg");
+  position: absolute;
+  transform: scale(0.5) translateX(-40px);
+}
+
+#year-details {
+  display: block;
+}
+
+#institution,
+#company {
+  color: white;
+  font-weight: 500;
+}
