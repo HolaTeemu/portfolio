@@ -11,133 +11,162 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="EasyScrollDots-master/dist/easyScrollDots.min.css"
+    />
+    <!-- styles -->
     <link rel="stylesheet" href="css/style_new.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- JS for Easy Scroll Dots -->
+    <script
+      type="text/javascript"
+      src="./EasyScrollDots-master/dist/easyScrollDots.min.js"
+    ></script>
     <title>Teemu Holappa</title>
   </head>
   <body>
-    <div class="site-body">
-        <div class="header active">
-            <a href="index_new.html" class="logo">
-              <span>T</span>eemu<br><span>H</span>olappa
-            </a>
-            <ul class="nav-links">
-              <li>
-                <a href="#about">
-                  <img src="images/person-outline.svg" alt="">
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="#skills">
-                  <img src="images/toolbox-outline.svg" alt="">
-                  Skills
-                </a>
-              </li>
-              <li>
-                <a href="#projects">
-                  <img src="images/git-branch-outline.svg" alt="">
-                  Projects
-                </a>
-              </li>
-              <li>
-                <a href="#contact">
-                  <img src="images/mail-outline.svg" alt="">
-                  Contact
-                </a>
-              </li>
-              <div class="hamburger-icon active">
-                <div class="line-1"></div>
-                <div class="line-2"></div>
-                <div class="line-3"></div>
-              </div>
-            </ul>
-          </li>
-        </div>
-        <!-- <div class="wrapper main"> -->
-        <div class="content-area">
-          <div class="introduction-wrapper">
-              <p class="hello-line">Hello, I'm</p>
-              <h1><span>T</span>eemu <span>H</span>olappa</h1>
-              <p class="slogan">A future full stack developer</p>
-              <p class="intro-text">
-                  I enjoy designing websites and bringing them alive
-              </p>
+    <!-- <div class="site-body"> -->
+    <header class="header header-down" id="header">
+      <a href="index_new.html" class="logo">
+        <span>T</span>eemu<br /><span>H</span>olappa
+      </a>
+      <ul class="nav-links">
+        <li>
+          <a href="#about">
+            <img src="images/person-outline.svg" alt="" />
+            About
+          </a>
+        </li>
+        <li>
+          <a href="#skills">
+            <img src="images/toolbox-outline.svg" alt="" />
+            Skills
+          </a>
+        </li>
+        <li>
+          <a href="#projects">
+            <img src="images/git-branch-outline.svg" alt="" />
+            Projects
+          </a>
+        </li>
+        <li>
+          <a href="#contact">
+            <img src="images/mail-outline.svg" alt="" />
+            Contact
+          </a>
+        </li>
+      </ul>
+      <div class="hamburger-icon">
+        <span class="line-1"></span>
+        <span class="line-2"></span>
+        <span class="line-3"></span>
+      </div>
+    </header>
+    <div class="content-area">
+      <div>
+        <div
+          class="scroll-indicator"
+          id="section01"
+          data-scroll-indicator-title="Teemu Holappa"
+        ></div>
+      </div>
+      <div class="introduction-wrapper">
+        <p class="hello-line">Hello, I'm</p>
+        <h1><span>T</span>eemu <span>H</span>olappa</h1>
+        <p class="slogan">A future full stack developer</p>
+        <p class="intro-text">
+          I enjoy designing websites and bringing them alive
+        </p>
+      </div>
+    </div>
+    <div class="content-area" id="about">
+      <div>
+        <div
+          class="scroll-indicator"
+          id="section02"
+          data-scroll-indicator-title="About"
+        ></div>
+      </div>
+      <div class="about-wrapper">
+        <h2>About</h2>
+        <div class="about-container">
+          <div class="about-icon-div">
+            <img src="images/accessibility-outline-aqua.svg" alt="" />
+            <p class="icon-title">Me</p>
           </div>
+          <div class="about-mobile-dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+          <p class="about-text-section">
+            24-year-old Information Processing Science student constantly
+            looking to improve my skills to be the best version of myself.
+            <br />
+            I really enjoy fooling around with code and learning/discovering new
+            things.
+            <br />
+            My goal is to reach a point where I can take on any challenge and I
+            have the tools and skills to solve it.
+          </p>
         </div>
-        <div class="content-area" id="about">
-          <div class="about-wrapper">
-            <h2>About</h2>
-            <div class="about-container">
-              <div class="about-icon-div">
-                  <img src="images/accessibility-outline-aqua.svg" alt="">
-                <p class="icon-title">Me</p>
-              </div>
-              <div class="about-mobile-dots">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-              </div>
-              <p class="about-text-section">
-                24-year-old Information Processing Science student 
-                constantly looking to improve my skills to be the best 
-                version of myself.
-                <br>
-                I really enjoy fooling around with code and learning/discovering new things.
-                <br>
-                My goal is to reach a point where I can take on any challenge and I have the tools and skills to solve it.
-              </p>
-            </div>
-            <div class="about-container">
-              <div class="about-icon-div">
-                <img src="images/school-outline-aqua.svg" alt="">
-                <p class="icon-title">Education</p>
-              </div>
-              <div class="about-mobile-dots">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-              </div>
-              <section class="about-text-section">
-                <span id="year-details">09/2019 - Present</span>
-                <span id="institution">Information Processing Science, University of Oulu</span>
-                <ul class="about-list studies-list">
-                  <li>
-                    Bachelor's expected 06/2022
-                  </li>
-                    <ul>
-                      <li>GPA 4.4</li>
-                    </ul>
-                  <li>
-                    Master's expected 06/2024
-                  </li>
-                </ul>
-                <span id="year-details">09/2013 - 06/2016</span>
-                <span id="institution">Upper Secondary School Graduate, Muhoksen Lukio</span>
-              </section>
-            </div>
-            <div class="about-container">
-              <div class="about-icon-div">
-                <img src="images/construct-outline-aqua.svg" alt="">
-                <p class="icon-title">Work<br><span id="in-tech">(in tech)</span></p>
-              </div>
-              <div class="about-mobile-dots">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-              </div>
-              <section class="about-text-section">
-                <span id="year-details">06/2021-08/2021</span>
-                <span id="company">Boogie Software</span>
-                <ul class="about-list work-list">
-                  <li>
-                    Own projects that I worked on quite independently. 
-                    The main project revolved around AI and data-analyzing. 
-                    After finishing that I also implemented dark mode-support to the companies website.
-                  </li>
-                </ul>
-              </section>
-            </div>
-            <!-- <div class="about-container">e
+        <div class="about-container">
+          <div class="about-icon-div">
+            <img src="images/school-outline-aqua.svg" alt="" />
+            <p class="icon-title">Education</p>
+          </div>
+          <div class="about-mobile-dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+          <section class="about-text-section">
+            <span id="year-details">09/2019 - Present</span>
+            <span id="institution"
+              >Information Processing Science, University of Oulu</span
+            >
+            <ul class="about-list studies-list">
+              <li>Bachelor's expected 06/2022</li>
+              <ul>
+                <li>GPA 4.4</li>
+              </ul>
+              <li>Master's expected 06/2024</li>
+            </ul>
+            <span id="year-details">09/2013 - 06/2016</span>
+            <span id="institution"
+              >Upper Secondary School Graduate, Muhoksen Lukio</span
+            >
+          </section>
+        </div>
+        <div class="about-container">
+          <div class="about-icon-div">
+            <img src="images/construct-outline-aqua.svg" alt="" />
+            <p class="icon-title">
+              Work<br /><span id="in-tech">(in tech)</span>
+            </p>
+          </div>
+          <div class="about-mobile-dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+          <section class="about-text-section">
+            <span id="year-details">06/2021-08/2021</span>
+            <span id="company">Boogie Software</span>
+            <ul class="about-list work-list">
+              <li>
+                Own projects that I worked on quite independently. The main
+                project revolved around AI and data-analyzing. After finishing
+                that I also implemented dark mode-support to the companies
+                website.
+              </li>
+            </ul>
+          </section>
+        </div>
+        <!-- <div class="about-container">e
               <div class="about-icon-div">
                 <img src="images/code-slash-outline-aqua.svg" alt="">
                 <p class="icon-title">Skills</p>
@@ -154,165 +183,245 @@
                   <p>* Currently expanding my abilities with</p>
                 </section>
             </div> -->
-            <div class="about-container">
-              <div class="about-icon-div">
-                  <img src="images/barbell-outline-aqua.svg" alt="">
-                <p class="icon-title">Hobbies</p>
-              </div>
-              <div class="about-mobile-dots">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-              </div>
-              <p class="about-text-section">
-                My hobbies consists mostly of my own coding projects, playing videogames and just relaxing with friends and family.
-                <br>
-                I also try to go to the gym as often as possible.
-                <br>
-                Before injuries I played Ice hockey and Finnish baseball. Thanks to those I'm a great at working as a team.
-              </p>
-            </div>
+        <div class="about-container">
+          <div class="about-icon-div">
+            <img src="images/barbell-outline-aqua.svg" alt="" />
+            <p class="icon-title">Hobbies</p>
           </div>
-        </div>
-
-        <div class="content-area" id="skills">
-          <h2>
-            My Toolbox
-          </h2>
-          <div class="skills-grid">
-            <div class="skill html">
-              <img src="images/logo-html.svg" alt="">
-              <p>HTML</p>
-            </div>
-            <div class="skill css">
-              <img src="images/logo-css.svg" alt="">
-              <p>CSS</p>
-            </div>
-            <div class="skill js">
-              <img src="images/logo-javascript.svg" alt="">
-              <p>JavaScript</p>
-            </div>
-            <div class="skill react">
-              <img src="images/logo-react.svg" alt="">
-              <p>React*</p>
-            </div>
-            <div class="skill figma">
-              <img src="images/logo-figma.svg" alt="">
-              <p>Figma</p>
-            </div>
-            <div class="skill python">
-              <img src="images/logo-python.svg" alt="">
-              <p>Python</p>
-            </div>
-              <p class="skills-bottom-text">*Currently expanding my abilities to work professionally with it</p>
+          <div class="about-mobile-dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
           </div>
-        </div>
-
-        <div class="content-area" id="projects">
-          <h2>Projects</h2>
-          <div class="projects-wrapper">
-              <p class="project-placeholder">
-              My own projects will be added here in the future.<br>
-              I already have couple in mind and will be working on those when I have the time
-              </p>
-          </div>
-        </div>
-
-        <div class="content-area" id="contact">
-          <h2>Contact</h2>
-          <div class="contact-wrapper">
-            <form class="contact-form" action="mailto:teemu.holappa97@gmail.com" method="GET" enctype="text/plain">
-              <div class="contact-row">
-                <label for="fullname">Full Name</label>
-                <input type="text" id="fullname">
-              </div>
-              <div class="contact-row">
-                <label for="email">Email</label>
-                <input type="email" id="email">
-              </div>
-              <div class="contact-row message-row">
-                <label for="message" id="message-label">Message</label>
-                <textarea name="message" id="message" spellcheck="false" placeholder="Type your message"></textarea>
-              </div>
-              <div class="contact-row">
-                <button type="submit" class="submit-button">Send</button>
-              </div>
-            </form>
-            <div class="contact-text-field">
-              <p>
-                Whether you have a question or just want to say hi, my inbox is always open and I will try my best to get back to you.
-              </p>
-              <p class="cv-download-text">
-                You can also download my <a href="CV/CV_TeemuHolappa(eng).pdf" download="CV_TeemuHolappa">CV</a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="footer">
-          <div class="social-media-links-footer">
-            <ul class="social-media-icons-footer">
-              <li>
-                <a href="CV/CV_TeemuHolappa(eng).pdf" download="CV_TeemuHolappa">
-                  <svg width="30" height="30" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M35.0832 14.0645C34.0991 13.4388 32.8693 12.9838 31.5148 12.7337C31.2865 12.69 31.0761 12.5803 30.9096 12.4181C30.7431 12.256 30.6279 12.0486 30.5781 11.8216C29.9948 9.26027 28.7523 7.06191 26.9303 5.3957C24.8002 3.44746 21.9843 2.375 19 2.375C16.3764 2.375 13.9531 3.19734 11.996 4.75C10.6741 5.80388 9.60944 7.14472 8.8825 8.67098C8.80163 8.84308 8.68074 8.99332 8.52993 9.10914C8.37911 9.22496 8.20277 9.303 8.01562 9.33672C6.00207 9.70039 4.26535 10.4262 2.93832 11.4668C1.0168 12.9757 0 15.108 0 17.6344C0 22.6367 4.15105 26.125 10.0938 26.125H17.8125V16.6584C17.8125 16.0194 18.3038 15.4709 18.9429 15.439C19.1034 15.4312 19.2639 15.4562 19.4145 15.5123C19.5651 15.5684 19.7028 15.6545 19.8192 15.7654C19.9356 15.8763 20.0282 16.0097 20.0915 16.1574C20.1548 16.3052 20.1875 16.4643 20.1875 16.625V26.125H29.3906C34.7819 26.125 38 23.5837 38 19.3266C38 17.0963 36.9914 15.2764 35.0832 14.0645V14.0645ZM17.8125 31.5741L15.0887 28.8548C14.8647 28.6377 14.5642 28.5174 14.2523 28.5201C13.9403 28.5227 13.642 28.6479 13.4216 28.8688C13.2013 29.0896 13.0767 29.3882 13.0748 29.7002C13.0728 30.0121 13.1937 30.3123 13.4113 30.5358L18.1613 35.2777C18.3839 35.4997 18.6856 35.6245 19 35.6245C19.3144 35.6245 19.6161 35.4997 19.8387 35.2777L24.5887 30.5358C24.8063 30.3123 24.9272 30.0121 24.9252 29.7002C24.9233 29.3882 24.7987 29.0896 24.5784 28.8688C24.358 28.6479 24.0597 28.5227 23.7477 28.5201C23.4358 28.5174 23.1353 28.6377 22.9113 28.8548L20.1875 31.5741V26.125H17.8125V31.5741Z" fill="currentColor"/>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                  <a href="https://www.linkedin.com/in/holateemu/">
-                      <svg width="30" height="30" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M32.9657 2.375H5.21609C3.6998 2.375 2.375 3.46602 2.375 4.96449V32.7757C2.375 34.2824 3.6998 35.625 5.21609 35.625H32.9576C34.482 35.625 35.625 34.2735 35.625 32.7757V4.96449C35.6339 3.46602 34.482 2.375 32.9657 2.375ZM12.6818 30.0905H7.9184V15.2802H12.6818V30.0905ZM10.4648 13.0284H10.4307C8.90625 13.0284 7.91914 11.8936 7.91914 10.473C7.91914 9.02648 8.93223 7.9184 10.4908 7.9184C12.0494 7.9184 13.0031 9.01832 13.0373 10.473C13.0365 11.8936 12.0494 13.0284 10.4648 13.0284ZM30.0905 30.0905H25.3271V21.9925C25.3271 20.0524 24.6339 18.7269 22.9106 18.7269C21.5939 18.7269 20.8146 19.6175 20.468 20.4851C20.3382 20.7968 20.3033 21.2214 20.3033 21.6548V30.0905H15.5399V15.2802H20.3033V17.3412C20.9965 16.3541 22.0793 14.9336 24.5991 14.9336C27.7259 14.9336 30.0912 16.9946 30.0912 21.4381L30.0905 30.0905Z" fill="currentColor"/>
-                      </svg>
-                  </a>
-              </li>
-              <li>
-                  <a href="https://github.com/HolaTeemu">
-                      <svg width="30" height="30" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M19 2.375C9.81914 2.375 2.375 10.0121 2.375 19.423C2.375 26.9563 7.13984 33.3391 13.7453 35.5953C13.838 35.6154 13.9325 35.6254 14.0273 35.625C14.6434 35.625 14.8809 35.1723 14.8809 34.7789C14.8809 34.3707 14.866 33.302 14.8586 31.877C14.3087 32.0059 13.7461 32.0731 13.1813 32.0773C9.98242 32.0773 9.25508 29.591 9.25508 29.591C8.49805 27.6242 7.40703 27.0973 7.40703 27.0973C5.95977 26.0805 7.39961 26.0508 7.51094 26.0508H7.51836C9.18828 26.1992 10.0641 27.8172 10.0641 27.8172C10.8953 29.2719 12.0086 29.6801 13.0031 29.6801C13.6607 29.6669 14.3082 29.5152 14.9031 29.2348C15.0516 28.1363 15.482 27.3867 15.957 26.9563C12.2684 26.5258 8.38672 25.0637 8.38672 18.5324C8.38672 16.6695 9.03242 15.148 10.0938 13.9605C9.92305 13.5301 9.35156 11.7934 10.257 9.44805C10.3785 9.41898 10.5033 9.4065 10.6281 9.41094C11.2293 9.41094 12.5875 9.64102 14.8289 11.1996C17.5524 10.4376 20.4328 10.4376 23.1562 11.1996C25.3977 9.64102 26.7559 9.41094 27.357 9.41094C27.4818 9.4065 27.6067 9.41898 27.7281 9.44805C28.6336 11.7934 28.0621 13.5301 27.8914 13.9605C28.9527 15.1555 29.5984 16.677 29.5984 18.5324C29.5984 25.0785 25.7094 26.5184 22.0059 26.9414C22.5996 27.4684 23.134 28.5074 23.134 30.0957C23.134 32.3742 23.1117 34.2148 23.1117 34.7715C23.1117 35.1723 23.3418 35.625 23.9578 35.625C24.0575 35.6254 24.157 35.6155 24.2547 35.5953C30.8676 33.3391 35.625 26.9488 35.625 19.423C35.625 10.0121 28.1809 2.375 19 2.375Z" fill="currentColor"/>
-                      </svg>
-                  </a>
-              </li>
-          </ul>
-          </div>
-          <p class="footer-text">
-            Designed & Created By Teemu Holappa
+          <p class="about-text-section">
+            My hobbies consists mostly of my own coding projects, playing
+            videogames and just relaxing with friends and family.
+            <br />
+            I also try to go to the gym as often as possible.
+            <br />
+            Before injuries I played Ice hockey and Finnish baseball. Thanks to
+            those I'm a great at working as a team.
           </p>
         </div>
-
-        <div class="social-media-div">
-          <ul class="social-media-icons">
-              <li>
-                <a href="CV/CV_TeemuHolappa(eng).pdf" download="CV_TeemuHolappa">
-                  <svg width="30" height="30" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M35.0832 14.0645C34.0991 13.4388 32.8693 12.9838 31.5148 12.7337C31.2865 12.69 31.0761 12.5803 30.9096 12.4181C30.7431 12.256 30.6279 12.0486 30.5781 11.8216C29.9948 9.26027 28.7523 7.06191 26.9303 5.3957C24.8002 3.44746 21.9843 2.375 19 2.375C16.3764 2.375 13.9531 3.19734 11.996 4.75C10.6741 5.80388 9.60944 7.14472 8.8825 8.67098C8.80163 8.84308 8.68074 8.99332 8.52993 9.10914C8.37911 9.22496 8.20277 9.303 8.01562 9.33672C6.00207 9.70039 4.26535 10.4262 2.93832 11.4668C1.0168 12.9757 0 15.108 0 17.6344C0 22.6367 4.15105 26.125 10.0938 26.125H17.8125V16.6584C17.8125 16.0194 18.3038 15.4709 18.9429 15.439C19.1034 15.4312 19.2639 15.4562 19.4145 15.5123C19.5651 15.5684 19.7028 15.6545 19.8192 15.7654C19.9356 15.8763 20.0282 16.0097 20.0915 16.1574C20.1548 16.3052 20.1875 16.4643 20.1875 16.625V26.125H29.3906C34.7819 26.125 38 23.5837 38 19.3266C38 17.0963 36.9914 15.2764 35.0832 14.0645V14.0645ZM17.8125 31.5741L15.0887 28.8548C14.8647 28.6377 14.5642 28.5174 14.2523 28.5201C13.9403 28.5227 13.642 28.6479 13.4216 28.8688C13.2013 29.0896 13.0767 29.3882 13.0748 29.7002C13.0728 30.0121 13.1937 30.3123 13.4113 30.5358L18.1613 35.2777C18.3839 35.4997 18.6856 35.6245 19 35.6245C19.3144 35.6245 19.6161 35.4997 19.8387 35.2777L24.5887 30.5358C24.8063 30.3123 24.9272 30.0121 24.9252 29.7002C24.9233 29.3882 24.7987 29.0896 24.5784 28.8688C24.358 28.6479 24.0597 28.5227 23.7477 28.5201C23.4358 28.5174 23.1353 28.6377 22.9113 28.8548L20.1875 31.5741V26.125H17.8125V31.5741Z" fill="currentColor"/>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                  <a href="https://www.linkedin.com/in/holateemu/">
-                      <svg width="30" height="30" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M32.9657 2.375H5.21609C3.6998 2.375 2.375 3.46602 2.375 4.96449V32.7757C2.375 34.2824 3.6998 35.625 5.21609 35.625H32.9576C34.482 35.625 35.625 34.2735 35.625 32.7757V4.96449C35.6339 3.46602 34.482 2.375 32.9657 2.375ZM12.6818 30.0905H7.9184V15.2802H12.6818V30.0905ZM10.4648 13.0284H10.4307C8.90625 13.0284 7.91914 11.8936 7.91914 10.473C7.91914 9.02648 8.93223 7.9184 10.4908 7.9184C12.0494 7.9184 13.0031 9.01832 13.0373 10.473C13.0365 11.8936 12.0494 13.0284 10.4648 13.0284ZM30.0905 30.0905H25.3271V21.9925C25.3271 20.0524 24.6339 18.7269 22.9106 18.7269C21.5939 18.7269 20.8146 19.6175 20.468 20.4851C20.3382 20.7968 20.3033 21.2214 20.3033 21.6548V30.0905H15.5399V15.2802H20.3033V17.3412C20.9965 16.3541 22.0793 14.9336 24.5991 14.9336C27.7259 14.9336 30.0912 16.9946 30.0912 21.4381L30.0905 30.0905Z" fill="currentColor"/>
-                      </svg>
-                  </a>
-              </li>
-              <li>
-                  <a href="https://github.com/HolaTeemu">
-                      <svg width="30" height="30" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M19 2.375C9.81914 2.375 2.375 10.0121 2.375 19.423C2.375 26.9563 7.13984 33.3391 13.7453 35.5953C13.838 35.6154 13.9325 35.6254 14.0273 35.625C14.6434 35.625 14.8809 35.1723 14.8809 34.7789C14.8809 34.3707 14.866 33.302 14.8586 31.877C14.3087 32.0059 13.7461 32.0731 13.1813 32.0773C9.98242 32.0773 9.25508 29.591 9.25508 29.591C8.49805 27.6242 7.40703 27.0973 7.40703 27.0973C5.95977 26.0805 7.39961 26.0508 7.51094 26.0508H7.51836C9.18828 26.1992 10.0641 27.8172 10.0641 27.8172C10.8953 29.2719 12.0086 29.6801 13.0031 29.6801C13.6607 29.6669 14.3082 29.5152 14.9031 29.2348C15.0516 28.1363 15.482 27.3867 15.957 26.9563C12.2684 26.5258 8.38672 25.0637 8.38672 18.5324C8.38672 16.6695 9.03242 15.148 10.0938 13.9605C9.92305 13.5301 9.35156 11.7934 10.257 9.44805C10.3785 9.41898 10.5033 9.4065 10.6281 9.41094C11.2293 9.41094 12.5875 9.64102 14.8289 11.1996C17.5524 10.4376 20.4328 10.4376 23.1562 11.1996C25.3977 9.64102 26.7559 9.41094 27.357 9.41094C27.4818 9.4065 27.6067 9.41898 27.7281 9.44805C28.6336 11.7934 28.0621 13.5301 27.8914 13.9605C28.9527 15.1555 29.5984 16.677 29.5984 18.5324C29.5984 25.0785 25.7094 26.5184 22.0059 26.9414C22.5996 27.4684 23.134 28.5074 23.134 30.0957C23.134 32.3742 23.1117 34.2148 23.1117 34.7715C23.1117 35.1723 23.3418 35.625 23.9578 35.625C24.0575 35.6254 24.157 35.6155 24.2547 35.5953C30.8676 33.3391 35.625 26.9488 35.625 19.423C35.625 10.0121 28.1809 2.375 19 2.375Z" fill="currentColor"/>
-                      </svg>
-                  </a>
-              </li>
-          </ul>
-        </div>
-        <div class="scroll-dots">
-          <div id="dot" class="active"></div>
-          <div id="dot"></div>
-          <div id="dot"></div>
-          <div id="dot"></div>
-          <div id="dot"></div>
-        </div>
-        <!-- </div> -->
+      </div>
     </div>
+    <div class="content-area" id="skills">
+      <div>
+        <div
+          class="scroll-indicator"
+          id="section03"
+          data-scroll-indicator-title="Skills"
+        ></div>
+      </div>
+      <h2>My Toolbox</h2>
+      <div class="skills-grid">
+        <div class="skill html">
+          <img src="images/logo-html.svg" alt="" />
+          <p>HTML</p>
+        </div>
+        <div class="skill css">
+          <img src="images/logo-css.svg" alt="" />
+          <p>CSS</p>
+        </div>
+        <div class="skill js">
+          <img src="images/logo-javascript.svg" alt="" />
+          <p>JavaScript</p>
+        </div>
+        <div class="skill react">
+          <img src="images/logo-react.svg" alt="" />
+          <p>React*</p>
+        </div>
+        <div class="skill figma">
+          <img src="images/logo-figma.svg" alt="" />
+          <p>Figma</p>
+        </div>
+        <div class="skill python">
+          <img src="images/logo-python.svg" alt="" />
+          <p>Python</p>
+        </div>
+        <p class="skills-bottom-text">
+          *Currently expanding my abilities to work professionally with it
+        </p>
+      </div>
+    </div>
+    <div class="content-area" id="projects">
+      <div>
+        <div
+          class="scroll-indicator"
+          id="section04"
+          data-scroll-indicator-title="Projects"
+        ></div>
+      </div>
+      <h2>Projects</h2>
+      <div class="projects-wrapper">
+        <p class="project-placeholder">
+          My own projects will be added here in the future.<br />
+          I already have couple in mind and will be working on those when I have
+          the time
+        </p>
+      </div>
+    </div>
+    <div class="content-area" id="contact">
+      <div>
+        <div
+          class="scroll-indicator"
+          id="section05"
+          data-scroll-indicator-title="Contact"
+        ></div>
+      </div>
+      <h2>Contact</h2>
+      <div class="contact-wrapper">
+        <form
+          class="contact-form"
+          action="mailto:teemu.holappa97@gmail.com"
+          method="GET"
+          enctype="text/plain"
+        >
+          <div class="contact-row">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" />
+          </div>
+          <div class="contact-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" />
+          </div>
+          <div class="contact-row message-row">
+            <label for="message" id="message-label">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              spellcheck="false"
+              placeholder="Type your message"
+            ></textarea>
+          </div>
+          <div class="contact-row">
+            <button type="submit" class="submit-button">Send</button>
+          </div>
+        </form>
+        <div class="contact-text-field">
+          <p>
+            Whether you have a question or just want to say hi, my inbox is
+            always open and I will try my best to get back to you.
+          </p>
+          <p class="cv-download-text">
+            You can also download my
+            <a href="CV/CV_TeemuHolappa(eng).pdf" download="CV_TeemuHolappa"
+              >CV</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="social-media-links-footer">
+        <ul class="social-media-icons-footer">
+          <li>
+            <a href="CV/CV_TeemuHolappa(eng).pdf" download="CV_TeemuHolappa">
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 38 38"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M35.0832 14.0645C34.0991 13.4388 32.8693 12.9838 31.5148 12.7337C31.2865 12.69 31.0761 12.5803 30.9096 12.4181C30.7431 12.256 30.6279 12.0486 30.5781 11.8216C29.9948 9.26027 28.7523 7.06191 26.9303 5.3957C24.8002 3.44746 21.9843 2.375 19 2.375C16.3764 2.375 13.9531 3.19734 11.996 4.75C10.6741 5.80388 9.60944 7.14472 8.8825 8.67098C8.80163 8.84308 8.68074 8.99332 8.52993 9.10914C8.37911 9.22496 8.20277 9.303 8.01562 9.33672C6.00207 9.70039 4.26535 10.4262 2.93832 11.4668C1.0168 12.9757 0 15.108 0 17.6344C0 22.6367 4.15105 26.125 10.0938 26.125H17.8125V16.6584C17.8125 16.0194 18.3038 15.4709 18.9429 15.439C19.1034 15.4312 19.2639 15.4562 19.4145 15.5123C19.5651 15.5684 19.7028 15.6545 19.8192 15.7654C19.9356 15.8763 20.0282 16.0097 20.0915 16.1574C20.1548 16.3052 20.1875 16.4643 20.1875 16.625V26.125H29.3906C34.7819 26.125 38 23.5837 38 19.3266C38 17.0963 36.9914 15.2764 35.0832 14.0645V14.0645ZM17.8125 31.5741L15.0887 28.8548C14.8647 28.6377 14.5642 28.5174 14.2523 28.5201C13.9403 28.5227 13.642 28.6479 13.4216 28.8688C13.2013 29.0896 13.0767 29.3882 13.0748 29.7002C13.0728 30.0121 13.1937 30.3123 13.4113 30.5358L18.1613 35.2777C18.3839 35.4997 18.6856 35.6245 19 35.6245C19.3144 35.6245 19.6161 35.4997 19.8387 35.2777L24.5887 30.5358C24.8063 30.3123 24.9272 30.0121 24.9252 29.7002C24.9233 29.3882 24.7987 29.0896 24.5784 28.8688C24.358 28.6479 24.0597 28.5227 23.7477 28.5201C23.4358 28.5174 23.1353 28.6377 22.9113 28.8548L20.1875 31.5741V26.125H17.8125V31.5741Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/holateemu/">
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 38 38"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M32.9657 2.375H5.21609C3.6998 2.375 2.375 3.46602 2.375 4.96449V32.7757C2.375 34.2824 3.6998 35.625 5.21609 35.625H32.9576C34.482 35.625 35.625 34.2735 35.625 32.7757V4.96449C35.6339 3.46602 34.482 2.375 32.9657 2.375ZM12.6818 30.0905H7.9184V15.2802H12.6818V30.0905ZM10.4648 13.0284H10.4307C8.90625 13.0284 7.91914 11.8936 7.91914 10.473C7.91914 9.02648 8.93223 7.9184 10.4908 7.9184C12.0494 7.9184 13.0031 9.01832 13.0373 10.473C13.0365 11.8936 12.0494 13.0284 10.4648 13.0284ZM30.0905 30.0905H25.3271V21.9925C25.3271 20.0524 24.6339 18.7269 22.9106 18.7269C21.5939 18.7269 20.8146 19.6175 20.468 20.4851C20.3382 20.7968 20.3033 21.2214 20.3033 21.6548V30.0905H15.5399V15.2802H20.3033V17.3412C20.9965 16.3541 22.0793 14.9336 24.5991 14.9336C27.7259 14.9336 30.0912 16.9946 30.0912 21.4381L30.0905 30.0905Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/HolaTeemu">
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 38 38"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 2.375C9.81914 2.375 2.375 10.0121 2.375 19.423C2.375 26.9563 7.13984 33.3391 13.7453 35.5953C13.838 35.6154 13.9325 35.6254 14.0273 35.625C14.6434 35.625 14.8809 35.1723 14.8809 34.7789C14.8809 34.3707 14.866 33.302 14.8586 31.877C14.3087 32.0059 13.7461 32.0731 13.1813 32.0773C9.98242 32.0773 9.25508 29.591 9.25508 29.591C8.49805 27.6242 7.40703 27.0973 7.40703 27.0973C5.95977 26.0805 7.39961 26.0508 7.51094 26.0508H7.51836C9.18828 26.1992 10.0641 27.8172 10.0641 27.8172C10.8953 29.2719 12.0086 29.6801 13.0031 29.6801C13.6607 29.6669 14.3082 29.5152 14.9031 29.2348C15.0516 28.1363 15.482 27.3867 15.957 26.9563C12.2684 26.5258 8.38672 25.0637 8.38672 18.5324C8.38672 16.6695 9.03242 15.148 10.0938 13.9605C9.92305 13.5301 9.35156 11.7934 10.257 9.44805C10.3785 9.41898 10.5033 9.4065 10.6281 9.41094C11.2293 9.41094 12.5875 9.64102 14.8289 11.1996C17.5524 10.4376 20.4328 10.4376 23.1562 11.1996C25.3977 9.64102 26.7559 9.41094 27.357 9.41094C27.4818 9.4065 27.6067 9.41898 27.7281 9.44805C28.6336 11.7934 28.0621 13.5301 27.8914 13.9605C28.9527 15.1555 29.5984 16.677 29.5984 18.5324C29.5984 25.0785 25.7094 26.5184 22.0059 26.9414C22.5996 27.4684 23.134 28.5074 23.134 30.0957C23.134 32.3742 23.1117 34.2148 23.1117 34.7715C23.1117 35.1723 23.3418 35.625 23.9578 35.625C24.0575 35.6254 24.157 35.6155 24.2547 35.5953C30.8676 33.3391 35.625 26.9488 35.625 19.423C35.625 10.0121 28.1809 2.375 19 2.375Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p class="footer-text">Designed & Created By Teemu Holappa</p>
+    </div>
+
+    <div class="social-media-div">
+      <ul class="social-media-icons">
+        <li>
+          <a href="CV/CV_TeemuHolappa(eng).pdf" download="CV_TeemuHolappa">
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 38 38"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M35.0832 14.0645C34.0991 13.4388 32.8693 12.9838 31.5148 12.7337C31.2865 12.69 31.0761 12.5803 30.9096 12.4181C30.7431 12.256 30.6279 12.0486 30.5781 11.8216C29.9948 9.26027 28.7523 7.06191 26.9303 5.3957C24.8002 3.44746 21.9843 2.375 19 2.375C16.3764 2.375 13.9531 3.19734 11.996 4.75C10.6741 5.80388 9.60944 7.14472 8.8825 8.67098C8.80163 8.84308 8.68074 8.99332 8.52993 9.10914C8.37911 9.22496 8.20277 9.303 8.01562 9.33672C6.00207 9.70039 4.26535 10.4262 2.93832 11.4668C1.0168 12.9757 0 15.108 0 17.6344C0 22.6367 4.15105 26.125 10.0938 26.125H17.8125V16.6584C17.8125 16.0194 18.3038 15.4709 18.9429 15.439C19.1034 15.4312 19.2639 15.4562 19.4145 15.5123C19.5651 15.5684 19.7028 15.6545 19.8192 15.7654C19.9356 15.8763 20.0282 16.0097 20.0915 16.1574C20.1548 16.3052 20.1875 16.4643 20.1875 16.625V26.125H29.3906C34.7819 26.125 38 23.5837 38 19.3266C38 17.0963 36.9914 15.2764 35.0832 14.0645V14.0645ZM17.8125 31.5741L15.0887 28.8548C14.8647 28.6377 14.5642 28.5174 14.2523 28.5201C13.9403 28.5227 13.642 28.6479 13.4216 28.8688C13.2013 29.0896 13.0767 29.3882 13.0748 29.7002C13.0728 30.0121 13.1937 30.3123 13.4113 30.5358L18.1613 35.2777C18.3839 35.4997 18.6856 35.6245 19 35.6245C19.3144 35.6245 19.6161 35.4997 19.8387 35.2777L24.5887 30.5358C24.8063 30.3123 24.9272 30.0121 24.9252 29.7002C24.9233 29.3882 24.7987 29.0896 24.5784 28.8688C24.358 28.6479 24.0597 28.5227 23.7477 28.5201C23.4358 28.5174 23.1353 28.6377 22.9113 28.8548L20.1875 31.5741V26.125H17.8125V31.5741Z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/holateemu/">
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 38 38"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M32.9657 2.375H5.21609C3.6998 2.375 2.375 3.46602 2.375 4.96449V32.7757C2.375 34.2824 3.6998 35.625 5.21609 35.625H32.9576C34.482 35.625 35.625 34.2735 35.625 32.7757V4.96449C35.6339 3.46602 34.482 2.375 32.9657 2.375ZM12.6818 30.0905H7.9184V15.2802H12.6818V30.0905ZM10.4648 13.0284H10.4307C8.90625 13.0284 7.91914 11.8936 7.91914 10.473C7.91914 9.02648 8.93223 7.9184 10.4908 7.9184C12.0494 7.9184 13.0031 9.01832 13.0373 10.473C13.0365 11.8936 12.0494 13.0284 10.4648 13.0284ZM30.0905 30.0905H25.3271V21.9925C25.3271 20.0524 24.6339 18.7269 22.9106 18.7269C21.5939 18.7269 20.8146 19.6175 20.468 20.4851C20.3382 20.7968 20.3033 21.2214 20.3033 21.6548V30.0905H15.5399V15.2802H20.3033V17.3412C20.9965 16.3541 22.0793 14.9336 24.5991 14.9336C27.7259 14.9336 30.0912 16.9946 30.0912 21.4381L30.0905 30.0905Z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/HolaTeemu">
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 38 38"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19 2.375C9.81914 2.375 2.375 10.0121 2.375 19.423C2.375 26.9563 7.13984 33.3391 13.7453 35.5953C13.838 35.6154 13.9325 35.6254 14.0273 35.625C14.6434 35.625 14.8809 35.1723 14.8809 34.7789C14.8809 34.3707 14.866 33.302 14.8586 31.877C14.3087 32.0059 13.7461 32.0731 13.1813 32.0773C9.98242 32.0773 9.25508 29.591 9.25508 29.591C8.49805 27.6242 7.40703 27.0973 7.40703 27.0973C5.95977 26.0805 7.39961 26.0508 7.51094 26.0508H7.51836C9.18828 26.1992 10.0641 27.8172 10.0641 27.8172C10.8953 29.2719 12.0086 29.6801 13.0031 29.6801C13.6607 29.6669 14.3082 29.5152 14.9031 29.2348C15.0516 28.1363 15.482 27.3867 15.957 26.9563C12.2684 26.5258 8.38672 25.0637 8.38672 18.5324C8.38672 16.6695 9.03242 15.148 10.0938 13.9605C9.92305 13.5301 9.35156 11.7934 10.257 9.44805C10.3785 9.41898 10.5033 9.4065 10.6281 9.41094C11.2293 9.41094 12.5875 9.64102 14.8289 11.1996C17.5524 10.4376 20.4328 10.4376 23.1562 11.1996C25.3977 9.64102 26.7559 9.41094 27.357 9.41094C27.4818 9.4065 27.6067 9.41898 27.7281 9.44805C28.6336 11.7934 28.0621 13.5301 27.8914 13.9605C28.9527 15.1555 29.5984 16.677 29.5984 18.5324C29.5984 25.0785 25.7094 26.5184 22.0059 26.9414C22.5996 27.4684 23.134 28.5074 23.134 30.0957C23.134 32.3742 23.1117 34.2148 23.1117 34.7715C23.1117 35.1723 23.3418 35.625 23.9578 35.625C24.0575 35.6254 24.157 35.6155 24.2547 35.5953C30.8676 33.3391 35.625 26.9488 35.625 19.423C35.625 10.0121 28.1809 2.375 19 2.375Z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- </div> -->
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
