@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="css/style_new.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- Form js -->
+    <script src="js/form.js"></script>
     <!-- JS for Easy Scroll Dots -->
     <script
       type="text/javascript"
@@ -271,19 +273,17 @@
       </div>
       <h2>Contact</h2>
       <div class="contact-wrapper">
-        <form
-          class="contact-form"
-          action="mailto:teemu.holappa97@gmail.com"
-          method="GET"
-          enctype="text/plain"
-        >
+        <form class="contact-form">
+          <input type="hidden" name="_subject" value="Contact from website" />
+          <input type="text" name="_honey" style="display: none" />
+          <input type="hidden" name="_captcha" value="false" />
           <div class="contact-row">
             <label for="fullname">Full Name</label>
-            <input type="text" id="fullname" />
+            <input type="text" id="fullname" name="name" required />
           </div>
           <div class="contact-row">
             <label for="email">Email</label>
-            <input type="email" id="email" />
+            <input type="email" id="email" name="email" required />
           </div>
           <div class="contact-row message-row">
             <label for="message" id="message-label">Message</label>
@@ -292,10 +292,19 @@
               id="message"
               spellcheck="false"
               placeholder="Type your message"
+              required
             ></textarea>
           </div>
           <div class="contact-row">
-            <button type="submit" class="submit-button">Send</button>
+            <button type="submit" class="submit-button">
+              <span>Send</span>
+            </button>
+          </div>
+          <div class="contact-row error-message-container">
+            <p>
+              Something went wrong! <br />
+              Try again please.
+            </p>
           </div>
         </form>
         <div class="contact-text-field">

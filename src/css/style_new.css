@@ -13,6 +13,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6.75em;
+}
+
 /*
   Remove list styles (bullets/numbers)
   in case you use it with normalize.css
@@ -78,17 +83,17 @@ HEADER
   top: 0;
   height: 7em;
   background-color: #444;
-  /* box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25); */
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: row;
   position: fixed;
   padding: 0 20%;
-  /* background-color: #444; */
   width: 100%;
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
   z-index: 1000;
+  opacity: 0.98;
   transition: top 0.2s ease-in-out;
 }
 
@@ -135,7 +140,7 @@ HEADER
 }
 
 .nav-links li a {
-  margin-top: 1em;
+  margin-top: 0.5em;
   font-size: 1.5em;
   font-weight: 300;
   padding: 10%;
@@ -155,10 +160,6 @@ HEADER
 }
 
 @media (max-width: 860px) {
-  .header {
-    height: 7em;
-  }
-
   .nav-links li {
     display: none;
   }
@@ -231,11 +232,11 @@ MOBILE
 
 .hamburger-icon {
   position: fixed;
-  top: 33px;
+  top: 45px;
   right: 28px;
   width: 47px;
-  height: 36px;
-  display: block !important;
+  height: 32px;
+  display: block;
   padding: 2px;
 }
 
@@ -261,7 +262,7 @@ MOBILE
   .hamburger-icon > span {
     position: fixed;
     right: 30px;
-    top: 35px;
+    top: 45px;
     display: inline;
     transition: 0.5s;
   }
@@ -274,6 +275,13 @@ MOBILE
   }
   .hamburger-icon.active .line-3 {
     transform: translateY(8px) rotate(-45deg);
+  }
+  .header-up .hamburger-icon,
+  .header-up .hamburger-icon .line-1,
+  .header-up .hamburger-icon .line-2,
+  .header-up .hamburger-icon .line-3 {
+    top: -7em;
+    transition: top 0.2s ease-in-out;
   }
 }
 
@@ -301,6 +309,7 @@ INTRODUCTION SECTION
 
 .hello-line {
   font-size: 2.25em;
+  margin: 0;
   /* color: var(--bright-red); */
   color: var(--red);
 }
@@ -352,7 +361,7 @@ h1 {
     margin: 0 10%;
   }
   .hello-line {
-    margin-top: 30%;
+    padding-top: 30%;
   }
 }
 
@@ -368,7 +377,7 @@ h1 {
   }
 
   .hello-line {
-    margin-top: 150px;
+    padding-top: 150px;
   }
 }
 
@@ -644,7 +653,7 @@ CONTACT
   display: flex;
   /* width: 50%; */
   max-width: 1200px;
-  margin: 0 auto 5% auto;
+  margin: 0 auto;
 }
 
 .contact-form {
@@ -695,13 +704,36 @@ CONTACT
 
 .submit-button {
   font-family: "Roboto", sans-serif;
-  height: 100%;
+  height: 40px;
   width: 110px;
   background: transparent;
   border: 2px solid var(--red);
   font-size: 0.75em;
   font-weight: 300;
   color: var(--red);
+}
+
+.submit-button span {
+  opacity: 1;
+  overflow: hidden;
+  transition: opacity 0.5s ease;
+}
+
+.success {
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/checkmark-green.svg");
+  background-repeat: no-repeat;
+  margin-right: 20px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(103, 255, 118, 0.2) !important;
+  transition: width 0.75s ease-in, margin-right 0.75s ease-in,
+    background-color 1s ease-in, border-radius 2s;
+}
+
+.success span {
+  opacity: 0;
 }
 
 .contact-text-field {
@@ -735,12 +767,24 @@ CONTACT
   border-bottom: 2px solid var(--red);
 }
 
-input:invalid {
+input:invalid:focus {
   border: 2px solid var(--red);
 }
 
 .submit-button:hover {
-  background-color: rgba(255, 107, 121, 0.2); /* LISÄÄ TÄHÄN HAALEAMPI VÄRI */
+  background-color: rgba(255, 107, 121, 0.1); /* LISÄÄ TÄHÄN HAALEAMPI VÄRI */
+}
+
+.error-message-container {
+  display: none;
+  color: red;
+  font-size: 0.6em;
+  text-align: end;
+  padding: 1em 0 2em 0;
+}
+
+.error-message-container.visible {
+  display: flex;
 }
 
 @media (max-width: 1300px) {
@@ -774,12 +818,15 @@ input:invalid {
   .submit-button {
     align-self: flex-end;
   }
+  .error-message-container.visible {
+    align-items: flex-end;
+  }
 }
 
 @media (max-width: 730px) {
   .contact-wrapper {
     max-width: 100%;
-    margin-bottom: 15%;
+    padding-bottom: 15%;
     flex-direction: column;
     align-items: center;
   }
@@ -813,13 +860,14 @@ FOOTER
 }
 
 .footer-text {
+  padding: 1em 0;
   font-weight: 100;
 }
 
 .social-media-icons-footer {
   display: none;
   width: 100%;
-  padding: 0;
+  padding: 20px 0;
   margin: 0 auto;
   justify-content: center;
 }
@@ -837,6 +885,7 @@ FOOTER
 @media (max-width: 1300px) {
   .social-media-icons-footer {
     display: flex;
+    padding-bottom: 0;
   }
 }
 
