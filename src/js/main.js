@@ -22,27 +22,6 @@ links.forEach((link) => {
   link.addEventListener("click", mobileMenu);
 });
 
-// window.addEventListener("scroll", (element) => {
-//   const currentScroll = window.pageYOffset;
-
-//   if (currentScroll <= 0) {
-//     body.classList.remove(scrollUp);
-//     return;
-//   }
-
-//   if (currentScroll > lastScroll && !body.classList.contains(scrollDown)) {
-//     body.classList.remove(scrollUp);
-//     body.classList.add(scrollDown);
-//   } else if (
-//     currentScroll < lastScroll &&
-//     body.classList.contains(scrollDown)
-//   ) {
-//     body.classList.remove(scrollDown);
-//     body.classList.add(scrollUp);
-//   }
-//   lastScroll = currentScroll;
-// });
-
 $(window).scroll(function (event) {
   didScroll = true;
 });
@@ -60,8 +39,6 @@ function hasScrolled() {
   // Make sure they scroll more than delta
   if (Math.abs(lastScrollTop - st) <= delta) return;
 
-  // If they scrolled down and are past the navbar, add class .nav-up.
-  // This is necessary so you never see what is "behind" the navbar.
   if (
     st > lastScrollTop &&
     st > navbarHeight &&
@@ -73,7 +50,6 @@ function hasScrolled() {
     // Scroll Up
     if (st + $(window).height() < $(document).height()) {
       $("header").removeClass("header-up").addClass("header-down");
-      // $("html").css("scroll-padding-top", "6.75em");
     }
   }
 

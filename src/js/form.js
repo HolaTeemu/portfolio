@@ -36,5 +36,3 @@ $(document).ready(function () {
       event.preventDefault();
   });
 });
-
-// TODO: Empty form input fields on done and make the button go "checkmark" on success
