@@ -1,0 +1,15 @@
+body {
+  height: 100vh;
+  width: 99vw;
+  display: flex;
+  align-items: center;
+  background-color: #444;
+}
+
+h1 {
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 5em;
+  font-weight: 100;
+}
