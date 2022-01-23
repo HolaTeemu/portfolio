@@ -240,12 +240,12 @@ MOBILE
 */
 
 .hamburger-icon {
+  display: none;
   position: fixed;
   top: 45px;
   right: 28px;
   width: 47px;
   height: 32px;
-  display: block;
   padding: 2px;
 }
 
@@ -268,8 +268,13 @@ MOBILE
 }
 
 @media (max-width: 860px) {
+  .hamburger-icon {
+    display: block;
+  }
+
   .hamburger-icon > span {
     position: fixed;
+    display: block;
     right: 30px;
     top: 45px;
     display: inline;
@@ -313,7 +318,7 @@ INTRODUCTION SECTION
 .introduction-wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 92vh;
   justify-content: center;
   margin: 0 auto;
   width: 50%;
@@ -574,6 +579,8 @@ TOOLBOX SECTION
 .skills-grid img {
   height: 140px;
   width: 140px;
+  min-height: 140px;
+  min-width: 140px;
 }
 
 .html {
@@ -606,7 +613,7 @@ TOOLBOX SECTION
 }
 
 .skills-grid p {
-  margin: 0.5em 0 1.5em 0;
+  margin: 0.5em 0 1em 0;
   font-size: 2em;
   font-weight: var(--thin-f);
 }
@@ -622,17 +629,24 @@ TOOLBOX SECTION
 @media (max-width: 1250px) {
   .skills-grid {
     margin: 5% auto;
-    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    /* grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
       "html css"
       "js react"
-      "figma python";
+      "figma python"; */
   }
 }
 
 @media (max-width: 640px) {
   .skills-grid {
-    display: block;
+    margin: 5% 5%;
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "html css"
+      "js react"
+      "figma python";
   }
 }
 

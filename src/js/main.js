@@ -10,8 +10,10 @@ let navbarHeight = $("header").outerHeight();
 
 /* Add classes which open the hamburger menu */
 mobileMenu = () => {
-  header.classList.toggle("active");
-  hamburgerButton.classList.toggle("active");
+  if ($(hamburgerButton).css("display") !== "none") {
+    header.classList.toggle("active");
+    hamburgerButton.classList.toggle("active");
+  }
 };
 
 /* Open hamburger menu on hamburger icon click */

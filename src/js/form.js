@@ -7,7 +7,7 @@ $(document).ready(function () {
   $(".contact-form").submit(function (event) {
     $.ajax({
       method: "POST",
-      url: "https://formsubmit.co/ajax/teemu.holappa97@gmail.com",
+      url: "https://formsubmit.co/ajax/c2b806c4276cc2082c34c3ee1b4c99b5",
       dataType: "json",
       accepts: "application/json",
       data: {
