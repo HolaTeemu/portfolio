@@ -2,6 +2,7 @@ const body = document.querySelector(".site-body");
 const hamburgerButton = document.querySelector(".hamburger-icon");
 const header = document.querySelector(".header");
 const links = document.querySelectorAll(".nav-links a");
+const scrollUpButton = document.querySelector(".top-scroll");
 
 let didScroll;
 let lastScrollTop = 0;
@@ -57,6 +58,13 @@ function hasScrolled() {
 
   lastScrollTop = st;
 }
+$(window).scroll(function (e) {
+  if ($(window).scrollTop() >= 200) {
+    scrollUpButton.classList.add("visible");
+  } else {
+    scrollUpButton.classList.remove("visible");
+  }
+});
 
 easyScrollDots({
   fixedNav: true,
