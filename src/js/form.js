@@ -5,6 +5,10 @@ $(document).ready(function () {
   const messageField = document.querySelector("#message");
 
   $(".contact-form").submit(function (event) {
+    if (currentLang === "fi") {
+      errorMessage.innerHTML =
+        "<p>Jokin meni pieleen!<br />Kokeile uudestaan, kiitos.</p>";
+    }
     $.ajax({
       method: "POST",
       url: "https://formsubmit.co/ajax/c2b806c4276cc2082c34c3ee1b4c99b5",

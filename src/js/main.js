@@ -3,6 +3,10 @@ const hamburgerButton = document.querySelector(".hamburger-icon");
 const header = document.querySelector(".header");
 const links = document.querySelectorAll(".nav-links a");
 const scrollUpButton = document.querySelector(".top-scroll");
+const languageSelectors = document.querySelectorAll(".language-selector a");
+const finButton = document.querySelector("#fin");
+const engButton = document.querySelector("#eng");
+const langSlash = document.querySelector(".lang-slash");
 
 let didScroll;
 let lastScrollTop = 0;
@@ -58,12 +62,37 @@ function hasScrolled() {
 
   lastScrollTop = st;
 }
+
 $(window).scroll(function (e) {
   if ($(window).scrollTop() >= 200) {
     scrollUpButton.classList.add("visible");
   } else {
     scrollUpButton.classList.remove("visible");
   }
+});
+
+changeLanguage = () => {
+  event.preventDefault();
+  $('[language="en"]').toggle();
+  $('[language="fi"]').toggle();
+  engButton.classList.toggle("selected");
+  finButton.classList.toggle("selected");
+  if (finButton.classList.contains("selected")) {
+    langSlash.style.transform = "rotate(-25deg)";
+    scrollUpButton.ariaLabel = "Skrollaa ylös";
+    changeFormToFinnish();
+    newLanguage = "fi";
+  } else {
+    langSlash.style.transform = "rotate(25deg)";
+    scrollUpButton.ariaLabel = "Scroll to top";
+    changeFormToEnglish();
+    newLanguage = "en";
+  }
+  localStorage.setItem("lang", newLanguage);
+};
+
+languageSelectors.forEach((lang) => {
+  lang.addEventListener("click", changeLanguage);
 });
 
 easyScrollDots({

@@ -61,27 +61,43 @@
       </a>
       <ul class="nav-links">
         <li>
-          <a href="#about">
+          <a href="#about" language="en">
             <img src="images/person-outline.svg" alt="" />
             About
           </a>
+          <a href="#about" language="fi">
+            <img src="images/person-outline.svg" alt="" />
+            Minusta
+          </a>
         </li>
         <li>
-          <a href="#skills">
+          <a href="#skills" language="en">
             <img src="images/toolbox-outline.svg" alt="" />
             Skills
           </a>
-        </li>
-        <li>
-          <a href="#projects">
-            <img src="images/git-branch-outline.svg" alt="" />
-            Projects
+          <a href="#skills" language="fi">
+            <img src="images/toolbox-outline.svg" alt="" />
+            Taidot
           </a>
         </li>
         <li>
-          <a href="#contact">
+          <a href="#projects" language="en">
+            <img src="images/git-branch-outline.svg" alt="" />
+            Projects
+          </a>
+          <a href="#projects" language="fi">
+            <img src="images/git-branch-outline.svg" alt="" />
+            Projektit
+          </a>
+        </li>
+        <li>
+          <a href="#contact" language="en">
             <img src="images/mail-outline.svg" alt="" />
             Contact
+          </a>
+          <a href="#contact" language="fi">
+            <img src="images/mail-outline.svg" alt="" />
+            Ota yhteyttä
           </a>
         </li>
       </ul>
@@ -89,6 +105,11 @@
         <span class="line-1"></span>
         <span class="line-2"></span>
         <span class="line-3"></span>
+      </div>
+      <div class="language-selector">
+        <a href="#" id="eng" aria-label="English / Englannin kieli">Eng</a>
+        <div class="lang-slash"></div>
+        <a href="#" id="fin" aria-label="Finnish / Suomen kieli">Fin</a>
       </div>
     </header>
     <div class="content-area" id="start">
@@ -100,11 +121,16 @@
         ></div>
       </div>
       <div class="introduction-wrapper">
-        <p class="hello-line">Hello, I'm</p>
+        <p class="hello-line" language="en">Hello, I'm</p>
+        <p class="hello-line" language="fi">Morjesta, mää oon</p>
         <h1><span>T</span>eemu <span>H</span>olappa</h1>
-        <p class="slogan">A future full stack developer</p>
-        <p class="intro-text">
+        <p class="slogan" language="en">A future full stack developer</p>
+        <p class="slogan" language="fi">Tuleva full stack kehittäjä</p>
+        <p class="intro-text" language="en">
           I enjoy designing websites and bringing them alive
+        </p>
+        <p class="intro-text" language="fi">
+          Tykkään sivustojen suunnittelusta ja niiden toteuttamisesta
         </p>
       </div>
     </div>
@@ -117,19 +143,21 @@
         ></div>
       </div>
       <div class="about-wrapper">
-        <h2>About</h2>
+        <h2 language="en">About</h2>
+        <h2 language="fi">Minusta</h2>
         <div class="about-container">
           <div class="about-icon-div">
             <img src="images/accessibility-outline.svg" alt="" />
-            <p class="icon-title">Me</p>
+            <p class="icon-title" language="en">Me</p>
+            <p class="icon-title" language="fi">Minä</p>
           </div>
           <div class="about-mobile-dots">
             <div class="dot"></div>
             <div class="dot"></div>
             <div class="dot"></div>
           </div>
-          <p class="about-text-section">
-            24-year-old Information Processing Science student constantly
+          <p class="about-text-section" language="en">
+            I'm 25-year-old Information Processing Science student constantly
             looking to improve my skills to be the best version of myself.
             <br />
             I enjoy fooling around with code and learning new things.
@@ -137,11 +165,21 @@
             My goal is to reach a point where I can take on any challenge and I
             have the tools and skills to solve it.
           </p>
+          <p class="about-text-section" language="fi">
+            Oon 25-vuotias Tietojenkäsittelytieteiden opiskelija, jonka jatkuvana tavoitteena
+            on olla paras versio itestään.
+            <br />
+            Tykkään kikkailla koodilla ja oppia sitä kautta uusia asioita.
+            <br />
+            Tavoitteena on päästä siihen pisteeseen, että voin ottaa vastaan
+            minkä tahansa haasteen ja omaan taidot ratkaista sen.
+          </p>
         </div>
         <div class="about-container">
           <div class="about-icon-div">
             <img src="images/school-outline.svg" alt="" />
-            <p class="icon-title">Education</p>
+            <p class="icon-title" language="en">Education</p>
+            <p class="icon-title" language="fi">Koulutus</p>
           </div>
           <div class="about-mobile-dots">
             <div class="dot"></div>
@@ -149,28 +187,43 @@
             <div class="dot"></div>
           </div>
           <section class="about-text-section">
-            <span id="year-details">09/2019 - Present</span>
-            <span id="institution"
+            <span id="year-details" language="en">09/2019 - Present</span>
+            <span id="year-details" language="fi">09/2019 - Nykyhetki</span>
+            <span id="institution" language="en"
               >Information Processing Science, University of Oulu</span
             >
-            <ul class="about-list studies-list">
+            <span id="institution" language="fi"
+              >Tietojenkäsittelytiede, Oulun yliopisto</span
+            >
+            <ul class="about-list studies-list" language="en">
               <li>Bachelor's expected 06/2022</li>
               <!-- <ul> -->
-              <li id="gpa">GPA 4.4</li>
+              <li id="gpa">GPA 4.36</li>
               <!-- </ul> -->
               <li>Master's expected 06/2024</li>
             </ul>
+            <ul class="about-list studies-list" language="fi">
+              <li>Kandi 06/2022 mennessä</li>
+              <!-- <ul> -->
+              <li id="gpa">KA 4.36</li>
+              <!-- </ul> -->
+              <li>Maisteri 06/2024 mennessä</li>
+            </ul>
             <span id="year-details">09/2013 - 06/2016</span>
-            <span id="institution"
+            <span id="institution" language="en"
               >Upper Secondary School Graduate, Muhoksen Lukio</span
             >
+            <span id="institution" language="fi">Ylioppilas, Muhoksen Lukio</span>
           </section>
         </div>
         <div class="about-container">
           <div class="about-icon-div">
             <img src="images/construct-outline.svg" alt="" />
-            <p class="icon-title">
+            <p class="icon-title" language="en">
               Work<br /><span id="in-tech">(in tech)</span>
+            </p>
+            <p class="icon-title" language="fi">
+              Työkokemus<br /><span id="in-tech">(tekniikan alalla)</span>
             </p>
           </div>
           <div class="about-mobile-dots">
@@ -181,7 +234,7 @@
           <section class="about-text-section">
             <span id="year-details">06/2021-08/2021</span>
             <span id="company">Boogie Software</span>
-            <ul class="about-list work-list">
+            <ul class="about-list work-list" language="en">
               <li>
                 Own projects that I worked on quite independently. The main
                 project revolved around AI and data analysis. After finishing
@@ -189,19 +242,28 @@
                 website.
               </li>
             </ul>
+            <ul class="about-list work-list" language="fi">
+              <li>
+                Omat projektit joiden parissa työskentelin melko itsenäisesti.
+                Pääasiallinen projekti pyöri tekoälyn ja data-analytiikan
+                ympärillä. Tämän projektin valmistuttua implementoin "tumman
+                tilan" yrityksen sivulle.
+              </li>
+            </ul>
           </section>
         </div>
         <div class="about-container">
           <div class="about-icon-div">
             <img src="images/barbell-outline.svg" alt="" />
-            <p class="icon-title">Hobbies</p>
+            <p class="icon-title" language="en">Hobbies</p>
+            <p class="icon-title" language="fi">Harrastukset</p>
           </div>
           <div class="about-mobile-dots">
             <div class="dot"></div>
             <div class="dot"></div>
             <div class="dot"></div>
           </div>
-          <p class="about-text-section">
+          <p class="about-text-section" language="en">
             My hobbies consist of my coding projects, playing video games, and
             relaxing with friends and family.
             <br />
@@ -209,6 +271,17 @@
             <br />
             I have also played Ice hockey and Finnish baseball competitively.
             Thanks to those I'm great at working as a team.
+          </p>
+          <p class="about-text-section" language="fi">
+            Harrastukset koostuu suurimmaksi osin omista koodiprojekteista,
+            videopeleistä ja rentoutumisesta kavereiden ja perheen kanssa.
+            <br />
+            Salilla pyrin myös käymään mahdollisimman usein.
+            <br />
+            Oon myös pelannu jääkiekkoa ja pesäpalloa kilpailullisesti.
+            <br />
+            Joukkuelajien myötä oon myös oppinut tosi hyväksi
+            tiimityöskentelijäksi.
           </p>
         </div>
       </div>
@@ -221,7 +294,8 @@
           data-scroll-indicator-title="Skills"
         ></div>
       </div>
-      <h2>My Toolbox</h2>
+      <h2 language="en">My Toolbox</h2>
+      <h2 language="fi">Työkalut</h2>
       <div class="skills-grid">
         <div class="skill html">
           <img src="images/logo-html.svg" alt="HTML logo" />
@@ -237,7 +311,7 @@
         </div>
         <div class="skill react">
           <img src="images/logo-react.svg" alt="React logo" />
-          <p>React*</p>
+          <p>React *</p>
         </div>
         <div class="skill figma">
           <img src="images/logo-figma.svg" alt="Figma logo" />
@@ -247,8 +321,11 @@
           <img src="images/logo-python.svg" alt="Python logo" />
           <p>Python</p>
         </div>
-        <p class="skills-bottom-text">
+        <p class="skills-bottom-text" language="en">
           *Currently expanding my abilities to work professionally with it
+        </p>
+        <p class="skills-bottom-text" language="fi">
+          *Opettelen paraikaa lisää mahdollisia työtehtäviäni varten
         </p>
       </div>
     </div>
@@ -260,12 +337,18 @@
           data-scroll-indicator-title="Projects"
         ></div>
       </div>
-      <h2>Projects</h2>
+      <h2 language="en">Projects</h2>
+      <h2 language="fi">Projektit</h2>
       <div class="projects-wrapper">
-        <p class="project-placeholder">
+        <p class="project-placeholder" language="en">
           My projects will be added here in the future.<br />
           I already have a couple in mind and will be working on those when I
           have the time.
+        </p>
+        <p class="project-placeholder" language="fi">
+          Projekteja lisätään tänne tulevaisuudessa.
+          <br />
+          Muutama projekti on jo mielessä ja alan työstämään niitä kun on aikaa.
         </p>
       </div>
     </div>
@@ -277,18 +360,19 @@
           data-scroll-indicator-title="Contact"
         ></div>
       </div>
-      <h2>Contact</h2>
+      <h2 language="en">Contact</h2>
+      <h2 language="fi">Ota yhteyttä</h2>
       <div class="contact-wrapper">
         <form class="contact-form">
           <input type="hidden" name="_subject" value="Contact from website" />
           <input type="text" name="_honey" style="display: none" />
           <input type="hidden" name="_captcha" value="false" />
           <div class="contact-row">
-            <label for="fullname">Full Name</label>
+            <label id=name-label for="fullname">Full Name</label>
             <input type="text" id="fullname" name="name" required />
           </div>
           <div class="contact-row">
-            <label for="email">Email</label>
+            <label id="email-label" for="email">Email</label>
             <input type="email" id="email" name="email" required />
           </div>
           <div class="contact-row message-row">
@@ -303,7 +387,8 @@
           </div>
           <div class="contact-row">
             <button type="submit" class="submit-button">
-              <span>Send</span>
+              <span language="en">Send</span>
+              <span language="fi">Lähetä</span>
             </button>
           </div>
           <div class="contact-row error-message-container">
@@ -313,7 +398,7 @@
             </p>
           </div>
         </form>
-        <div class="contact-text-field">
+        <div class="contact-text-field" language="en">
           <p>
             Whether you have a question or just want to say hi, my inbox is
             always open and I will try my best to get back to you.
@@ -323,6 +408,18 @@
             <a href="CV/CV_TeemuHolappa(Eng).pdf" download="CV_TeemuHolappa"
               >CV</a
             >
+          </p>
+        </div>
+        <div class="contact-text-field" language="fi">
+          <p>
+            Jos sulla on kysymys tai haluat vaan moikata niin pistä ehdottomasti viestiä!
+            </br>Pyrin vastailemaan parhaani mukaan!
+          </p>
+          <p class="cv-download-text">
+            Voit myös ladata mun
+            <a href="CV/CV_TeemuHolappa(Fin).pdf" download="CV_TeemuHolappa"
+              >CV</a
+            >:n
           </p>
         </div>
       </div>
@@ -335,7 +432,7 @@
             <a
               href="CV/CV_TeemuHolappa(Eng).pdf"
               download="CV_TeemuHolappa"
-              aria-label="Download CV"
+              aria-label="CV"
             >
               <svg
                 width="30"
@@ -401,16 +498,50 @@
           </li>
         </ul>
       </div>
-      <p class="footer-text">Designed & Created By Teemu Holappa</p>
+      <p class="footer-text" language="en">Designed & Created By Teemu Holappa</p>
+      <p class="footer-text" language="fi">Suunnitellut & Luonut - Teemu Holappa</p>
     </div>
 
     <div class="social-media-div">
       <ul class="social-media-icons">
-        <li>
+        <li language="en">
           <a
             href="CV/CV_TeemuHolappa(Eng).pdf"
             download="CV_TeemuHolappa"
-            aria-label="Download CV"
+            aria-label="CV"
+          >
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 38 38"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M35 16.1599V32.0769C35 33.1174 34.4943 34.1152 33.5941 34.851C32.6939 35.5867 31.473 36 30.2 36H7.8C6.52696 36 5.30606 35.5867 4.40589 34.851C3.50571 34.1152 3 33.1174 3 32.0769V5.92308C3 4.88261 3.50571 3.88476 4.40589 3.14904C5.30606 2.41332 6.52696 2 7.8 2H17.675C18.5234 2.0001 19.337 2.27556 19.937 2.76582L34.063 14.3111C34.6628 14.8015 34.9999 15.4665 35 16.1599Z"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M19 4V12.6842C19 13.2984 19.3327 13.8874 19.9249 14.3217C20.5171 14.756 21.3204 15 22.1579 15H34"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M14.3933 32.18C12.5693 32.18 11.1053 31.592 10.0013 30.416C8.90927 29.24 8.36327 27.578 8.36327 25.43C8.36327 23.306 8.89127 21.65 9.94727 20.462C11.0153 19.274 12.4973 18.68 14.3933 18.68C15.2093 18.68 15.9533 18.74 16.6253 18.86C16.8653 18.908 17.0633 19.034 17.2193 19.238C17.3753 19.43 17.4533 19.652 17.4533 19.904C17.4533 20.12 17.3633 20.294 17.1833 20.426C17.0153 20.546 16.8293 20.576 16.6253 20.516C16.0613 20.372 15.3773 20.3 14.5733 20.3C13.2773 20.3 12.2513 20.75 11.4953 21.65C10.7513 22.538 10.3793 23.798 10.3793 25.43C10.3793 27.062 10.7633 28.328 11.5313 29.228C12.2993 30.116 13.3133 30.56 14.5733 30.56C15.3653 30.56 16.0793 30.482 16.7153 30.326C16.9193 30.266 17.1053 30.302 17.2733 30.434C17.4533 30.566 17.5433 30.74 17.5433 30.956C17.5433 31.208 17.4653 31.436 17.3093 31.64C17.1533 31.832 16.9493 31.952 16.6973 32C15.9893 32.12 15.2213 32.18 14.3933 32.18ZM23.2539 31.028L19.4019 19.832C19.3179 19.592 19.3479 19.37 19.4919 19.166C19.6479 18.962 19.8519 18.86 20.1039 18.86H20.1759C20.4879 18.86 20.7639 18.95 21.0039 19.13C21.2559 19.31 21.4239 19.544 21.5079 19.832L24.6759 30.002C24.6759 30.014 24.6819 30.02 24.6939 30.02C24.7059 30.02 24.7119 30.014 24.7119 30.002L27.8799 19.832C27.9759 19.544 28.1439 19.31 28.3839 19.13C28.6359 18.95 28.9119 18.86 29.2119 18.86C29.4639 18.86 29.6619 18.962 29.8059 19.166C29.9619 19.37 29.9979 19.592 29.9139 19.832L26.0619 31.028C25.9659 31.316 25.7919 31.55 25.5399 31.73C25.2999 31.91 25.0239 32 24.7119 32H24.6039C24.3039 32 24.0279 31.91 23.7759 31.73C23.5239 31.55 23.3499 31.316 23.2539 31.028Z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+        </li>
+        <li language="fi">
+          <a
+          href="CV/CV_TeemuHolappa(Fin).pdf"
+          download="CV_TeemuHolappa"
+          aria-label="CV"
           >
             <svg
               width="30"
@@ -491,6 +622,7 @@
       </svg>
     </a>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/language.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <!-- Form js -->
     <script src="js/form.js"></script>
